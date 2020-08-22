@@ -1,0 +1,148 @@
+\documentclass{article}
+\usepackage{scrextend}
+\usepackage[spanish, english]{babel} 
+\usepackage[spanish]{babel}
+\usepackage[dvips,a3paper,centering,margin=2cm]{geometry}
+\usepackage{multicol}
+\usepackage[utf8]{inputenc}
+\usepackage{color}
+\usepackage{graphicx}  
+\pagestyle{empty}
+\def\to{\rightarrow}
+\begin{document}
+\begin{center}
+  \begin{minipage}{.19\linewidth}
+    \includegraphics[width=1.1\linewidth]{images/uanl.png}
+  \end{minipage}
+  %&
+  \begin{minipage}{.6\linewidth}
+    \begin{center}
+      \Large \textbf{Revsion de las ecuaciones de la cinematica por medio del formalismo lagrangiano
+       }\\
+   Lopez Padilla, Giovanni Gamaliel\\
+   Estudiante de Licenciatura en Fisica
+    \end{center}
+  \end{minipage}
+  \begin{minipage}{0.19\linewidth}
+    \includegraphics[width=1.1\linewidth]{images/fcfm.png}
+  \end{minipage}
+\end{center}
+\vspace{.1cm}
+\changefontsizes{14pt}
+\begin{multicols}{2}
+\begin{center}
+\textbf{
+Introduccion:
+}
+\end{center}
+\vspace*{-0.5cm}
+Una ecuación de Lagrange o lagrangiano es un objeto matemático
+que contiene toda la dinámica de un sistema de partículas.
+Un sistema de partículas es un modelo de sistema físico formado
+por las partículas o cuerpos cuyas dimensiones y estado interno
+pueden ser tomadas en cuenta para el estudio del mismo. El sistema
+de partículas que será usado es el de la partícula con una
+fuerza constante.\\
+\vspace*{-0.5cm}
+\begin{center}
+\textbf{
+0bjetivo:
+}
+\end{center}
+El objetivo es obtener las ecuaciones de la cinemática bajo las restricciones
+que contiene un sistema de partícula con una fuerza
+constante mediante el formalismo del lagrangianos en solo una dimensión.\\
+\vspace*{-0.5cm}
+\begin{center}
+\textbf{
+Metodologia:
+}
+\end{center}
+La energía potencial del sistema podemos deducirla de la ecuación
+sobre la primera ley de la termodinámica
+\begin{equation}
+du=dQ-dW
+\end{equation}
+Donde $dQ$ será cero, ya que el sistema no transmitira energía en forma de calor.\\
+Al aplicar una intregral de linea, sustituyendo el diferencial del trabajo por el producto punto de la fuerza y el diferencial de desplazamiento, se obtiene que:
+\begin{equation}
+U= \oint_s -\vec{F} \cdot d\vec{s}
+\end{equation}
+Al ser la fuerza paralela al vector de desplazamiento, el prodcuto interno se transforma en un producto escalar, con lo que la expresión para la energía potencial del sistema esta dada por:
+\begin{equation}
+U= -fx
+\end{equation}
+La expresión para la energía cinética será obtenida de la definición de trabajo:
+\begin{equation}
+W= \oint_s \vec{F} \cdot d\vec{s}
+\end{equation}
+Donde el vector de fuerza uede ser expresado como el producto escalar de la masa por la aceleración del sistema, con lo que al asociarlo con el diferencual de desplazamiento, se obtiene una velocidad multiplicada con un diferencial de velocidad, y el trabajo es expresado como una diferencia de energía cinética.
+\begin{equation}
+\Delta K = m \int vdv
+\end{equation}
+Al definir que $K_0 = 0$ y los limites de integración son de $0$ a $v$, se tiene que la energía cinética del sistema propuesto es:
+\begin{equation}
+K = \frac{1}{2} m v^2
+\end{equation}
+Construyendo así el lagrangiano del sistema
+\begin{equation}
+L = \frac{1}{2} mv^2 + Fx
+\end{equation}
+Al cual se le exigira al sistema que cumpla el principio de minima acción, con lo que al cumplir este principio podra ser usada le ecuacióon de Euler-Lagrange para seguir analizando el sistema propuesto.
+\begin{equation}
+\frac{\partial L}{\partial x} - \frac{d\lbrace \frac{\partial L} {\partial \dot{x} } \rbrace}{dt} = 0
+\end{equation}
+Realizando todas las opeaciones con la ecuacion de Euler-Lagrange, se obtiene que:
+\begin{equation}
+\frac{\partial L}{\partial x} - \frac{d\lbrace \frac{\partial L} {\partial \dot{x} } \rbrace}{dt} =  F - m\ddot{a} = 0
+\end{equation}
+Se expresara a la fuerza como el producto escalar entre la masa y la aceleración, con lo que se tiene lo siguiente:
+\begin{equation}
+\ddot{x}=a
+\end{equation}
+\begin{equation}
+\int_0^t d\dot{x}= \int_{0}^t adt
+\end{equation}
+\begin{equation}
+\dot{x}(t) = v(t) = at + v(0) = at+ v_0
+\end{equation}
+Realizando un proceso similar con $\dot{x}$ se obtiene que:
+\begin{equation}
+\int_0^t x = \int_0^t at+v_0 
+\end{equation}
+\begin{equation}
+x(t) = \frac{1}{2} at^2 +v_0 t +x (0) = \frac{1}{2} at^2 +v_0 t +x_0 
+\end{equation}
+Con lo que al desarrollar y hacer procesos algebricos se obtendra la siguiente ecuación.
+\begin{equation}
+V^2= V_0^2 + 2a \Delta x
+\end{equation}
+\vspace*{-0.5cm}
+\begin{center}
+\textbf{
+Conclusión:
+}
+\end{center}
+\vspace*{-0.5cm}
+Es posible obtener las ecuaciones e la cinemática de un
+sistema con propiedades o cualidades especificas con el
+uso de las ecuaciones de Lagrange en cualquier número
+de dimensiones en el que se quieran obtener las ecuaciones
+y que las ecuaciones de la cinemática que conoce
+la mayoría de las personas describen la dinámica de
+un sistema que no se presenta en la realidad.\\
+\changefontsizes{8pt}
+\begin{center}
+\textbf{
+Referencias:
+}
+\end{center}
+\begin{enumerate}
+\item E, V. (s.f.). Mecánica Lagrangiana y Hamiltoniana. Madrid: Universidad Autónoma de Madrid.
+hamiltoniana, I. a. (s.f.).
+\item M, N. (2005). Dinámica de un sistema de partículas. Almería: Universidad de Almería.
+\item Roca, C. F. (2008). Introducción a la formulación lagrangiana y hamiltoniana. Valencia: Universidad de Valencia.
+\item Terenzio, S. C. (2013). Introducción a la mecánica de Lagrange
+\end{enumerate}
+\end{multicols}
+\end{document}
