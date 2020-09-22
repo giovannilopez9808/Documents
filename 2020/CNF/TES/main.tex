@@ -109,7 +109,7 @@ obtenidos a partir de mediciones minuto a minuto en el periodo de 2016-2018 de 1
 En cabina de fototerapia, las Dosis\textsubscript{UVA} aplicadas para Psoriasis son de 1, 1.5, 2 y 3 J/cm$^2$. 
 Para obtenerla a partir de la irradiancia solar se utiliza la siguiente ecuación:
 \begin{equation*}
-    Dosis_{UVA}= \int\limits_{t_0}^{t}I_{UVA}dt
+    Dosis_{UVA}=\int\limits_{t_0}^t\int\limits_{320}^{400} E_{\lambda} d\lambda dt =\int\limits_{t_0}^{t}I_{UVA}dt
 \end{equation*}
 donde $t_0$ y $t$ son la hora de inicio y hora de finalización de la exposición tal que la integral es igual a la dosis\textsubscript{UVA} deseadas.
 Por lo tanto $t-t_0$ es el TES requerido. La dosis eritémica para alcanzarla y determinar el TES máximo correspondiente se incluye en la ecuación el espectro de sensibilidad eritémica $E_{erit}$ de la piel humana:
@@ -130,7 +130,7 @@ Al tener información minuto a minuto se calcularon los TES minimos y máximos i
     \centering
     \caption{Franja de valores en las diferentes temporadas del año para \\los TES respectivos del fototipo III y IV }
 \end{figure}
-\textcolor{na}{I$_{UVA}$ calculada con Modelo TUV (sup). TES para acumular 1J/cm$^2$ de Dosis$_{UVA}$ y 210 J/m$^2$ de Dosis$_{erit}$ comenzando las 11:00 hs TL; funciones mínimas y máximas con coeficientes promedios anuales en el periodo 2015-2018 (inf).}
+I$_{UVA}$ calculada con Modelo TUV (sup). TES para acumular 1J/cm$^2$ de Dosis$_{UVA}$ y 210 J/m$^2$ de Dosis$_{erit}$ comenzando las 11:00 hs TL; funciones mínimas y máximas con coeficientes promedios anuales en el periodo 2015-2018 (inf).
 \changefontsizes{12pt}
 \begin{center}
 \begin{shaded}
