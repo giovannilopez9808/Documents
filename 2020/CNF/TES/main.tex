@@ -6,13 +6,16 @@
 \usepackage[spanish,es-tabla]{babel}
 \usepackage[dvips,a3paper,centering,margin=2cm]{geometry}
 \usepackage{multicol}
+\usepackage{subcaption}
 \usepackage[utf8]{inputenc}
 \usepackage{color}
 \usepackage{float}
+\usepackage{cite}
 \usepackage{colortbl}
 \usepackage{tabulary}
 \usepackage{multirow}
 \usepackage{amsmath}
+\usepackage[breaklinks=true,hidelinks]{hyperref}
 \definecolor{rb}{rgb}{0.025,0.5,0.9} 
 \definecolor{na}{RGB}{255,255,255}
 \definecolor{title}{RGB}{55, 0, 49}
@@ -94,7 +97,7 @@ obtenidos a partir de mediciones minuto a minuto en el periodo de 2016-2018 de 1
     \centering \normalsize
     \begin{tabulary}{1.0\linewidth}{ccccccc}
          \multirow{2}{*}{Fototipo}& \multirow{2}{*}{H\textsubscript{er} (SED)} & \multicolumn{4}{c}{Color} & Distribución en el color de piel\\
-         & & \multicolumn{4}{c}{de piel} &en la población mexicana(\%) \\ 
+         & & \multicolumn{4}{c}{de piel} &en la población mexicana(\%) \\  \hline
         I 	&2.0	&\cellcolor[RGB]{251, 244, 227}\hspace*{0.05cm} 	&\cellcolor[RGB]{245, 240, 218}\hspace*{0.05cm}  &\cellcolor[RGB]{247, 238, 217}\hspace*{0.05cm} 	&\cellcolor[RGB]{248, 234, 209} \hspace*{0.05cm} &0.8	\\ \hline
         II 	&2.5	&\cellcolor[RGB]{248, 234, 208}	&\cellcolor[RGB]{247, 231, 206} &\cellcolor[RGB]{247, 223, 199}	&\cellcolor[RGB]{245, 222, 188}	& 3.9 \\ \hline
         III &3.0 	&\cellcolor[RGB]{245, 221, 188}	&\cellcolor[RGB]{238, 213, 170} &\cellcolor[RGB]{219,182,137}	&\cellcolor[RGB]{220,170,120} &24.0	\\ \hline
@@ -109,14 +112,46 @@ obtenidos a partir de mediciones minuto a minuto en el periodo de 2016-2018 de 1
 En cabina de fototerapia, las Dosis\textsubscript{UVA} aplicadas para Psoriasis son de 1, 1.5, 2 y 3 J/cm$^2$. 
 Para obtenerla a partir de la irradiancia solar se utiliza la siguiente ecuación:
 \begin{equation*}
-    Dosis_{UVA}=\int\limits_{t_0}^t\int\limits_{320}^{400} E_{\lambda} d\lambda dt =\int\limits_{t_0}^{t}I_{UVA}dt
+    Dosis_{UVA}=\int\limits_{t_0}^t\int\limits_{320nm}^{400nm} E_{\lambda} d\lambda dt =\int\limits_{t_0}^{t}I_{UVA}dt
 \end{equation*}
 donde $t_0$ y $t$ son la hora de inicio y hora de finalización de la exposición tal que la integral es igual a la dosis\textsubscript{UVA} deseadas.
 Por lo tanto $t-t_0$ es el TES requerido. La dosis eritémica para alcanzarla y determinar el TES máximo correspondiente se incluye en la ecuación el espectro de sensibilidad eritémica $E_{erit}$ de la piel humana:
 \begin{equation*}
-    Dosis_{Erit}=\int\limits_{t_0}^{t} \int\limits_{290nm}^{400nm} \left( E_{erit}E_{sol}\right)d\lambda dt = \int\limits_{t_0}^{t}I_{erit}dt
+    Dosis_{Erit}=\int\limits_{t_0}^{t} \int\limits_{280nm}^{400nm} \left( E_{erit}E_{sol}\right)d\lambda dt = \int\limits_{t_0}^{t}I_{erit}dt
 \end{equation*}
-Al tener información minuto a minuto se calcularon los TES minimos y máximos iniciando desde las 8:00 horas hasta las 14:59 horas, esto considerando los bordes que tiene la Ciudad de México y que después de las 16 horas la dosis\textsubscript{UVA} no se llega a adquirir.
+Al tener información minuto a minuto se calcularon los TES minimos y máximos iniciando desde las 8:00 horas hasta las 14:59 horas, esto considerando los bordes que tiene la Ciudad de México y que después de las 16 horas la dosis\textsubscript{UVA} no se llega a adquirir.\\
+%\begin{figure}[H]
+%    \centering
+%    \begin{subfigure}[H]{0.5\linewidth}
+%        \vspace*{-0.5cm}
+%        \hspace{-0.7cm}
+%        \includegraphics[width=7cm,height=4.9cm]{images/cloud.png}
+%         \changefontsizes{10pt}
+%         \vspace*{-0.5cm}
+%         \caption{Cloud factor}
+%     \end{subfigure}
+%     \begin{subfigure}[H]{0.4\linewidth}
+%         \includegraphics[scale=0.4]{images/despejado.png}
+%         \changefontsizes{10pt}
+%         \caption{Cielo despejado (0\% -25\%)}
+%     \end{subfigure}
+%     \begin{subfigure}[H]{0.5\linewidth}
+%         \includegraphics[scale=0.4]{images/seminublado2.jpg}
+%         \changefontsizes{10pt}
+%         \caption{Medio nublado (26\%-75\%)}
+%     \end{subfigure}
+%     \begin{subfigure}[H]{0.4\linewidth}
+%         \includegraphics[scale=0.4]{images/nublado.png}
+%         \changefontsizes{10pt}
+%         \caption{Nublado (76\%-100\%)}
+%     \end{subfigure}
+%     \caption{Tipos de cielo utilizados}
+% \end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{images/nubes.png}
+    \caption{Parámetros para las condiciones de cielo}
+\end{figure}
 \begin{center}
 \begin{shaded}
 \textbf{\textcolor{na}{Resultados}}
@@ -124,13 +159,20 @@ Al tener información minuto a minuto se calcularon los TES minimos y máximos i
 \end{center}
 \vspace{-0.2cm}
 \begin{figure}[H]
-    \centering
-    \includegraphics[scale=1.3]{images/FillDosis2.eps}
-    \label{fig:dosismaxima}
-    \centering
-    \caption{Franja de valores en las diferentes temporadas del año para \\los TES respectivos del fototipo III y IV }
+   \centering
+   \begin{subfigure}[H]{0.5\linewidth}
+       \includegraphics[scale=0.395]{images/pso.png}
+        \changefontsizes{10pt}
+        \caption{TES minímos para \\las diferentes dosis.}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.4\linewidth}
+        \centering
+        \includegraphics[scale=0.395]{images/ery.png}
+        \changefontsizes{10pt}
+        \caption{TES mámimos para los \\diferentes fototipos.}
+    \end{subfigure}
+    \caption{---}
 \end{figure}
-I$_{UVA}$ calculada con Modelo TUV (sup). TES para acumular 1J/cm$^2$ de Dosis$_{UVA}$ y 210 J/m$^2$ de Dosis$_{erit}$ comenzando las 11:00 hs TL; funciones mínimas y máximas con coeficientes promedios anuales en el periodo 2015-2018 (inf).
 \changefontsizes{12pt}
 \begin{center}
 \begin{shaded}
@@ -142,6 +184,21 @@ I$_{UVA}$ calculada con Modelo TUV (sup). TES para acumular 1J/cm$^2$ de Dosis$_
 \begin{shaded}
 \textbf{\textcolor{na}{Referencias}}
 \end{shaded}
+\changefontsizes{7pt}
+% \bibliographystyle{abbrv}
+% \nocite{*}
+% \bibliography{main}
+\begin{enumerate}
+\item Cie standard s 013/e:2003 international standard global solar uv index. Color Research \& Application, 29(2):164–164, 2004.
+\item  S. Cabrera, A. Ipiña, A. Damiani, R. R. Cordero, and R. D. Piacentini. Uv index values and trends
+in santiago, chile (33.5 ° s) based on ground and satellite data. Journal of Photochemistry and
+Photobiology B: Biology, 115:73 – 84, 2012.
+\item  W. Kirch, editor. Global Solar UV Index, pages 500–500. Springer Netherlands, Dordrecht, 2008.
+\item M. Makgabutlane and C. Y. Wright. Real-time measurement of outdoor worker’s exposure to solar
+ultraviolet radiation in pretoria, south africa. South African Journal of Science, 111(5/6):1–7, May
+2015.
+\item H. Staiger and P. Koepke. Uv index forecasting on a global scale. Meteorologische Zeitschrift,14(2):259–270, 05 2005.
+\end{enumerate}
 \end{center}
 \end{multicols}
 \end{document}
