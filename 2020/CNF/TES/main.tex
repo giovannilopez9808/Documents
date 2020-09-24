@@ -2,10 +2,10 @@
 \usepackage{framed}
 \usepackage{scrextend}
 \usepackage{xcolor}
-\definecolor{shadecolor}{RGB}{105, 48, 195}
 \usepackage[spanish,es-tabla]{babel}
 \usepackage[dvips,a3paper,centering,margin=2cm]{geometry}
 \usepackage{multicol}
+\usepackage{graphicx} 
 \usepackage{subcaption}
 \usepackage[utf8]{inputenc}
 \usepackage{color}
@@ -16,12 +16,11 @@
 \usepackage{multirow}
 \usepackage{amsmath}
 \usepackage[breaklinks=true,hidelinks]{hyperref}
+\definecolor{shadecolor}{RGB}{105, 48, 195}
 \definecolor{rb}{rgb}{0.025,0.5,0.9} 
 \definecolor{na}{RGB}{255,255,255}
-\definecolor{title}{RGB}{55, 0, 49}
-\usepackage{graphicx}  
+\definecolor{title}{RGB}{55, 0, 49} 
 \pagestyle{empty}
-\def\to{\rightarrow}
 \begin{document}
 \vspace*{-2cm}
 \changefontsizes{14pt}
@@ -96,14 +95,14 @@ obtenidos a partir de mediciones minuto a minuto en el periodo de 2016-2018 de 1
     \begin{table}[H]
     \centering \normalsize
     \begin{tabulary}{1.0\linewidth}{ccccccc}
-         \multirow{2}{*}{Fototipo}& \multirow{2}{*}{H\textsubscript{er} (SED)} & \multicolumn{4}{c}{Color} & Distribución en el color de piel\\
+         \multirow{2}{*}{Fototipo}& \multirow{2}{*}{MED ($J/m^2$)} & \multicolumn{4}{c}{Color} & Distribución en el color de piel\\
          & & \multicolumn{4}{c}{de piel} &en la población mexicana(\%) \\  \hline
-        I 	&2.0	&\cellcolor[RGB]{251, 244, 227}\hspace*{0.05cm} 	&\cellcolor[RGB]{245, 240, 218}\hspace*{0.05cm}  &\cellcolor[RGB]{247, 238, 217}\hspace*{0.05cm} 	&\cellcolor[RGB]{248, 234, 209} \hspace*{0.05cm} &0.8	\\ \hline
-        II 	&2.5	&\cellcolor[RGB]{248, 234, 208}	&\cellcolor[RGB]{247, 231, 206} &\cellcolor[RGB]{247, 223, 199}	&\cellcolor[RGB]{245, 222, 188}	& 3.9 \\ \hline
-        III &3.0 	&\cellcolor[RGB]{245, 221, 188}	&\cellcolor[RGB]{238, 213, 170} &\cellcolor[RGB]{219,182,137}	&\cellcolor[RGB]{220,170,120} &24.0	\\ \hline
-        IV 	&4.5	&\cellcolor[RGB]{219, 191, 129}	&\cellcolor[RGB]{208, 171, 107} &\cellcolor[RGB]{193, 150, 90}	&\cellcolor[RGB]{182, 135, 75}&59.2	\\ \hline
-        V	&6.0	&\cellcolor[RGB]{172, 121, 68}	&\cellcolor[RGB]{135, 92, 50}  &\cellcolor[RGB]{113, 70, 38}	&\cellcolor[RGB]{77, 48, 28}&8.9	\\ \hline
-        VI 	&10.0 	&\cellcolor[RGB]{68, 37, 20}	&\cellcolor[RGB]{43, 25, 8}  &\cellcolor[RGB]{32, 12, 7}	&\cellcolor[RGB]{10, 2, 5}	&2.5	\\ \hline
+        I 	&200	&\cellcolor[RGB]{251, 244, 227}\hspace*{0.05cm} 	&\cellcolor[RGB]{245, 240, 218}\hspace*{0.05cm}  &\cellcolor[RGB]{247, 238, 217}\hspace*{0.05cm} 	&\cellcolor[RGB]{248, 234, 209} \hspace*{0.05cm} &0.8	\\ \hline
+        II 	&250	&\cellcolor[RGB]{248, 234, 208}	&\cellcolor[RGB]{247, 231, 206} &\cellcolor[RGB]{247, 223, 199}	&\cellcolor[RGB]{245, 222, 188}	& 3.9 \\ \hline
+        III &300 	&\cellcolor[RGB]{245, 221, 188}	&\cellcolor[RGB]{238, 213, 170} &\cellcolor[RGB]{219,182,137}	&\cellcolor[RGB]{220,170,120} &24.0	\\ \hline
+        IV 	&450	&\cellcolor[RGB]{219, 191, 129}	&\cellcolor[RGB]{208, 171, 107} &\cellcolor[RGB]{193, 150, 90}	&\cellcolor[RGB]{182, 135, 75}&59.2	\\ \hline
+        V	&600	&\cellcolor[RGB]{172, 121, 68}	&\cellcolor[RGB]{135, 92, 50}  &\cellcolor[RGB]{113, 70, 38}	&\cellcolor[RGB]{77, 48, 28}&8.9	\\ \hline
+        VI 	&1000 	&\cellcolor[RGB]{68, 37, 20}	&\cellcolor[RGB]{43, 25, 8}  &\cellcolor[RGB]{32, 12, 7}	&\cellcolor[RGB]{10, 2, 5}	&2.5	\\ \hline
     \end{tabulary}
     \caption{{Adaptación de la clasificación de Fitzpatrick para: fototipos, límite de la dosis eritemica en terminos de dosis eritemica estandar (SED), color de piel y sus respectivos porcentajes que se presentan en la población mexicana.{\label{fig:fototipo}}}}
     \end{table}
@@ -159,19 +158,22 @@ Al tener información minuto a minuto se calcularon los TES minimos y máximos i
 \end{center}
 \vspace{-0.2cm}
 \begin{figure}[H]
-   \centering
-   \begin{subfigure}[H]{0.5\linewidth}
-       \includegraphics[scale=0.395]{images/pso.png}
-        \changefontsizes{10pt}
-        \caption{TES minímos para \\las diferentes dosis.}
+    \begin{subfigure}[H]{0.5\linewidth}
+        \changefontsizes{9pt}
+        \caption{}
+        \centering
+        \vspace{-0.1cm}
+        \includegraphics[scale=0.395]{images/pso.png}
     \end{subfigure}
     \begin{subfigure}[H]{0.4\linewidth}
+        \changefontsizes{9pt}
+        \caption{}
         \centering
+        \vspace{-0.2cm}
         \includegraphics[scale=0.395]{images/ery.png}
-        \changefontsizes{10pt}
-        \caption{TES mámimos para los \\diferentes fototipos.}
     \end{subfigure}
-    \caption{---}
+\caption{(a) mínimo para alcanzar las dosis para el tratamiento de Psoriasis y 
+(b) límite máximo para evitar eritema de acuerdo a cada fototipo de piel.}
 \end{figure}
 \changefontsizes{12pt}
 \begin{center}
