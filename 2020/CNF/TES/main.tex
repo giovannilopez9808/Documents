@@ -25,7 +25,7 @@
 \pagestyle{empty}
 \begin{document}
 \vspace*{-2cm}
-\changefontsizes{14pt}
+\changefontsizes{12pt}
 \hspace*{-1cm}
 \begin{minipage}{0.2\linewidth}
 \vspace{0.7cm}
@@ -40,7 +40,7 @@
 \hspace*{-0.1cm}
 \textbf{\textcolor{title}{Desarrollo de la plataforma “TES para tu salud” que determina los Tiempos de Exposición Solar adecuados para el tratamiento de Psoriasis en la Ciudad de México}}
 \end{center}
-\vspace{-1cm}
+\vspace{-0.5cm}
 \begin{center}
 \begin{small}
     Gamaliel López-Padilla$^1$, Adriana Ipiña$^{2}$,Rubén Piacentini$^{2}$\\
@@ -56,7 +56,6 @@
 \end{minipage}
 \vspace{0.1cm}
 \begin{multicols}{2}
-\changefontsizes{13pt}
 \begin{center}
 \begin{shaded}
 \textbf{\textcolor{na}{Introducción}}
@@ -71,16 +70,15 @@ tratada con fototerapia ultravioleta (UV). Los pacientes son expuestos a fuentes
 siendo ésta la modalidad más utilizada en los Centros médicos. Sin embargo,
 \end{minipage} \vspace{-0.1cm}\\por diversos motivos los pacientes no tienen acceso a estos tratamientos o no pueden asistir con 
 la asiduidad para recibirlo adecuadamente. Una recomendación alternativa es exponerse al sol. En este trabajo presentamos 
-una plataforma que calcula los tiempos de exposición solar (TES) minímos y máximos usando mediciones de irradiancia solar 
-UVB y UVA para días de cielo despejado en la Ciudad de México en el perido 2016-2018.
-\vspace{0.05cm}
+una plataforma que calcula los tiempos de exposición solar (TES) para el tratamiento de psoriasis y TES límite para evitar quemadura, usando mediciones de irradiancia solar 
+UVA y eritémica para días de cielo despejado en la Ciudad de México en el periodo 2016-2018.
 \begin{center}
 \begin{shaded}
-\textbf{\textcolor{na}{Metodologia}}
+\textbf{\textcolor{na}{Metodología}}
 \end{shaded}
 \end{center}
-Para el cálculo de los tiempos de exposición solar se tomaron como referencia las mediciones de irradiancia UVA y eritemica
- para cada fototitpo cutáneo, que se muestra en la tabla \ref{tabla:fototipo}.
+Para el cálculo de los tiempos de exposición solar se tomaron como referencia las mediciones de irradiancia UVA y eritémica
+ para cada fototipo cutáneo, que se muestra en la tabla \ref{tabla:fototipo}.
 \vspace{-0.5cm}
     \begin{table}[H]
     \centering \normalsize
@@ -95,18 +93,19 @@ Para el cálculo de los tiempos de exposición solar se tomaron como referencia 
         VI 	&1000 	&\cellcolor[RGB]{68, 37, 20}	&\cellcolor[RGB]{43, 25, 8}  &\cellcolor[RGB]{32, 12, 7}	&\cellcolor[RGB]{10, 2, 5}	&2.5	\\ \hline
     \end{tabulary}
     \caption{{Adaptación de la clasificación de Fitzpatrick para: fototipos, 
-    dosis eritemica mínima en J/m\textsuperscript{2} (MED), color de piel y sus 
+    dosis eritémica mínima en J/m\textsuperscript{2} (MED), color de piel y sus 
     respectivos porcentajes que se presentan en la población mexicana.{\label{tabla:fototipo}}}}
     \end{table}
  Los datos de irradiancia solar fueron obtenidos a partir de mediciones minuto a minuto en el periodo de 2016-2018 de 
- 10 estaciones del Sistema de Monitoreo Atmosférico (SIMAT) de la Ciudad de México. Se realizó una limpieza de estos datos para
- obtener unicamente los días de cielo despejado.\\
+ 10 estaciones del Sistema de Monitoreo Atmosférico (SIMAT) de la Ciudad de México. Se realizó un filtrado de estos datos para
+ obtener unicamente los días de cielo despejado. A partir de los días seleccionados se creó una base de datos anual para determinar
+  la irradiancia solar en tres condiciones de cielo, utilizando el factor C\textsubscript{f}: 1, 0.7, 0.5; para día despejado, medio nublado y nublado, respectivamente
+   (Figura \ref{fig:cloud})
  \begin{figure}[H]
     \centering
     \includegraphics[scale=0.68]{images/nubes.png}
-    \caption{Factor de nubes (C\textsubscript{f}) que atenúa la irradiancia solar UV, en función del porcentaje de cobertura en el cielo.
-     Para tres condiciones de cielo el C\textsubscript{f} promedio considerado es: 1, 0.7, 0.5; día despejado, 
-     medio nublado y nublado, respectivamente.}
+    \caption{Factor de nubes (C\textsubscript{f}) que atenúa la irradiancia solar UV, en
+    función del porcentaje de cobertura en el cielo. }
     \label{fig:cloud}
 \end{figure}
 En cabina de fototerapia, las dosis UVA aplicadas para el tratamiento de Psoriasis son 1, 1.5, 2 y 3 J/cm$^2$. 
@@ -114,44 +113,40 @@ Para obtener la misma dosis a partir de la irradiancia solar se utilizó la sigu
 \begin{equation*}
     Dosis_{UVA}=\int\limits_{t_0}^t\int\limits_{320nm}^{400nm} C_f E_{\lambda} d\lambda dt =\int\limits_{t_0}^{t} C_f I_{UVA}dt
 \end{equation*}
-donde $t_0$ y $t$ son la hora de inicio y hora de finalización para la dosis UVA deseada, 
+donde $t_0$ y $t$ son la hora de inicio y hora de finalización para obtener la dosis UVA deseada, 
 por lo tanto, $t-t_0$ es el TES requerido para el tratamiento.\\ Para evitar quemadura solar o eritema se determina el TES máximo 
-empleando las dosis eritémicas de la tabla \ref{tabla:fototipo} realizando la operación semejante a la dosis UVA incluyendo la ecuación del espectro de sensibilidad eritémica E\textsubscript{erit} de la piel humana
+empleando los MED reportados en la tabla \ref{tabla:fototipo} realizando la operación semejante a la dosis UVA incluyendo la ecuación del espectro de sensibilidad eritémica E\textsubscript{erit} de la piel humana
 \begin{equation*}
     Dosis_{Erit}=\int\limits_{t_0}^{t} \int\limits_{280nm}^{400nm} \left( C_f E_{erit}E_{sol}\right)d\lambda dt = \int\limits_{t_0}^{t}C_f I_{erit}dt
 \end{equation*}
+\vspace{0.05cm}
 \begin{center}
-\begin{shaded}
-\textbf{\textcolor{na}{Resultados}}
-\end{shaded}
-\end{center}
-\vspace{-0.2cm}
+    \begin{shaded}
+    \textbf{\textcolor{na}{Resultados}}
+    \end{shaded}
+    \end{center}
 \begin{figure}[H]
     \begin{subfigure}[H]{0.5\linewidth}
-        \changefontsizes{9pt}
         \centering
         \vspace{-0.1cm}
         \includegraphics[scale=0.38]{images/pso.png}
     \end{subfigure}
     \begin{subfigure}[H]{0.4\linewidth}
-        \changefontsizes{9pt}
         \centering
         \vspace{-0.2cm}
         \includegraphics[scale=0.38]{images/ery.png}
     \end{subfigure}
-\caption{(a) TES mínimo para obtener las dosis UVA necesarias en el tratamiento de Psoriasis y 
-(b) para evitar eritema para cada fototipo de piel en cielo despejado.}
+\caption{(a) TES para obtener las dosis UVA necesarias en el tratamiento de Psoriasis y 
+(b) TES para evitar eritema en cada fototipo de piel según las condiciones de cielo despejado.}
 \end{figure}
-\changefontsizes{12pt}
 \begin{center}
 \begin{shaded}
-\changefontsizes{12pt}
 \textbf{\textcolor{na}{Conclusiones}}
 \end{shaded}
 \end{center}
 \begin{itemize}
-    \item Independientemente de las condiciones de cielo, las dosis UVA para el tratamiento de Psoriasis pueden ser alcanzados en tiempos cortos.
-    \item La diferencia entre TES límite máximo y mínimo es suficiente grande para garantizar el tratamiento y disminui el riesgo de quemadura.
+    \item Independientemente de las condiciones de cielo, las dosis UVA para el tratamiento de Psoriasis pueden ser alcanzados en tiempos cortos durante todo el año.
+    \item La diferencia entre el TES requerido para las dosis UVA y el TES para producir eritema es suficientemente grande para garantizar el tratamiento evitando el riesgo de quemadura.
     \item Esta plataforma y la asistencia remota pueden coadyuvar a realizar los tratamientos 
     dermatológicos a distancia, respondiendo a la nueva normalidad ocasionada por el virus SARS-CoV2.
 \end{itemize}
