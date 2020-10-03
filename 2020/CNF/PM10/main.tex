@@ -64,14 +64,15 @@ email: giovannilopez9808@gmail.com y ipina@ifir-conicet.gov.ar
 \textbf{\textcolor{ver}{Introducción}}
 \end{shaded}
 \end{center}
-\begin{minipage}{0.35\linewidth}
+\vspace*{-0.5cm}
+\begin{minipage}{0.4\linewidth}
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.29]{images/AMM10.png}
 \caption{Área Metropolitana de Monterrey (AMM)}
 \end{figure}
 \end{minipage}
-\begin{minipage}{0.65\linewidth}
+\begin{minipage}{0.60\linewidth}
     Los aerosoles son partículas suspendidas en la atmósfera que pueden ser de origen natural o antropogénico. 
     La concentración de partículas de tamaño menor a 10$\mu$m (PM\textsubscript{10}) es una medida útil en el control de la calidad del aire. 
     Los aerosoles dependiendo su composición y tamaño provocan cambios en la climatología del lugar así como efectos nocivos en la 
@@ -84,30 +85,32 @@ email: giovannilopez9808@gmail.com y ipina@ifir-conicet.gov.ar
 \end{minipage}
 \begin{center}
 \begin{shaded}
-\textbf{\textcolor{ver}{Metodologia}}
+\textbf{\textcolor{ver}{Metodología}}
 \end{shaded}
 \end{center}
 \begin{minipage}{0.75\linewidth}
 Se seleccionaron sólo las mediciones de radiación solar bajo cielo despejado. Se modificó el código fuente del modelo 
 SMARTS para ingresar los valores de la Tabla \ref{tabla:parametros} y realizar iteraciones con el AOD\textsubscript{500nm}, 
-hasta que la diferencia relativa entre la irradiancia medida y modelada es del 10\% al mediodia solar.
+hasta que la diferencia relativa entre la irradiancia medida y modelada alcanza el 10\% al mediodia solar.
 \begin{table}[H]
     \changefontsizes{9.5pt}
         \centering
     \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|} \hline
-         \multirow{2}{*}{Estación} & \multirow{2}{*}{Lat}& \multirow{2}{*}{Lon} & \multirow{2}{*}{asnm} & CH\textsubscript{2}O & CH\textsubscript{4}& CO & HNO\textsubscript{2} & HNO\textsubscript{3} & NO & NO\textsubscript{2} & NO\textsubscript{3} & SO\textsubscript{2} & CO\textsubscript{2}&O\textsubscript{3}\\ \cline{5-15}
+         \multirow{2}{*}{Estación} & \multirow{2}{*}{Lat}& \multirow{2}{*}{Lon} & \multirow{2}{*}{m snm} & CH\textsubscript{2}O & CH\textsubscript{4}& CO & HNO\textsubscript{2} & HNO\textsubscript{3} & NO & NO\textsubscript{2} & NO\textsubscript{3} & SO\textsubscript{2} & CO\textsubscript{2}&O\textsubscript{3}\\ \cline{5-15}
                 &       &   &  & \multicolumn{10}{c|}{ppmv}  & \multicolumn{1}{c|}{DU} \\ \hline
        Noreste &  25.74&-100.26&476   & \multirow{2}{*}{0.007} & \multirow{2}{*}{0.3}& \multirow{2}{*}{0.35}    &   \multirow{2}{*}{0.002}  &  \multirow{2}{*}{0.005} & \multirow{2}{*}{0.2} & \multirow{2}{*}{0.02} & \multirow{2}{*}{5x10$^{-5}$}  &\multirow{2}{*}{0.05} & \multirow{2}{*}{390}&OMI\\
         Noroeste &  25.76&-100.46&571  &  & & & &  &  &  & &  & & NASA\\\hline
     \end{tabular}
-    \caption{ Parámetros de entrada en modelo SMARTS: coordenadas geográficas de las estaciones Noreste y Noroeste, en un escenario de contaminación 'moderada' y medición de la columna de ozono (DU) por OMI-NASA}
+    \caption{ Parámetros de entrada en modelo SMARTS: coordenadas geográficas de las estaciones Noreste y Noroeste,
+    en un escenario de contaminación ’moderada’ (opción definida en el modelo) y medición de la columna de ozono (DU) por OMI-NASA}
     \label{tabla:parametros}
 \end{table}
 \end{minipage}
 \begin{minipage}{0.25\linewidth}
     \begin{figure}[H]
-    \includegraphics[scale=0.08]{images/mediciones.jpg}
-    \caption{ Instrumento de medición de PM 10 perteneciente al SIMA}
+        \centering
+    \includegraphics[scale=0.06]{images/mediciones.jpg}
+    \caption{ Instrumento de medición de PM\textsubscript{10} perteneciente al SIMA}
     \end{figure}
 \end{minipage}
 \begin{center}
@@ -121,29 +124,35 @@ hasta que la diferencia relativa entre la irradiancia medida y modelada es del 1
         \centering
         \includegraphics[height=8cm]{images/AODsandPM10.png}
         \includegraphics[height=7.7cm]{images/AODvsPM10.png}
-        \caption{AOD550nm (círculos naranjas) derivado del modelo SMARTS y PM10 (círculos azules) 
-        medido por SIMA para las estaciones NO y NE (izq). Ajuste lineal de la correlación del AOD550nm obtenido con SMARTS
+        \caption{AOD\textsubscript{550nm} (círculos naranjas) derivado del modelo SMARTS y PM\textsubscript{10} (círculos azules) 
+        medido por SIMA para las estaciones NO y NE (izq). Ajuste lineal del AOD\textsubscript{550nm} al medio día solar obtenido con SMARTS
         y el PM\textsubscript{10} medido en las estaciones SIMA, al mediodía solar en días de cielo despejado en el periodo 2015-2019 (der).}
     \end{figure}
 \end{center}
-\begin{minipage}{0.60\linewidth}
+\begin{minipage}{0.70\linewidth}
 \begin{center}
 \begin{shaded}
 \textbf{\textcolor{ver}{Conclusiones}}
 \end{shaded}
 \end{center}
 \begin{itemize}
-    \item a
+    \item En la estación Noroeste existe una tendencia creciente en el AOD\textsubscript{550nm} posiblemente debido a un incremento en la actividad de la industria
+    pedrera, aunado a erosión progresiva del suelo los ultimos años. Los valores de PM\textsubscript{10} corresponden a medicones a nivel del suelo que, debido a la altura,
+     circulación del viento y la presencia de un cerro en la zona, pudieran originar una diferencia respecto al AOD\textsubscript{550nm} estimado.
+     \item La zona donde se sitúa la estación Noreste tiene un relieve uniforme donde además hay una mayor diversidad de actividades industriales
+      y tráfico vehicular en comparación con la estación Noroeste, por lo tanto, el AOD\textsubscript{550nm} 
+     cirucla podría ser producido por actividades antropogénicas de rutina, es por ello que se mantiene una tendencia
+      semejante a la del PM\textsubscript{10} medido.
 \end{itemize}
 \end{minipage}
-\hspace{1cm}\vspace{0.5cm}
-\begin{minipage}{0.35\linewidth}
+\hspace{0.8cm}
+\begin{minipage}{0.25\linewidth}
+\vspace*{-0.6cm}
 \begin{center}
 \begin{shaded}
 \textbf{\textcolor{ver}{Referencias}}
 \end{shaded}
 \end{center}
-\changefontsizes{9pt}
 \begin{enumerate}
     \item Kaufman, Y. J., et al., Nature, (419) 215 – 223, 2002.
     \item Ipiña A, Salum GM, Crinó E, Piacentini R, Adv in Space R 966–977, 2012.
