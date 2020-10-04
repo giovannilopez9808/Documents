@@ -77,7 +77,7 @@ UVA y eritémica para días de cielo despejado en la Ciudad de México en el per
 \textbf{\textcolor{na}{Metodología}}
 \end{shaded}
 \end{center}
-Para el cálculo de los tiempos de exposición solar se tomaron como referencia las mediciones de irradiancia UVA y eritémica
+Para el cálculo de los tiempos de exposición solar se tomaron como referencia las dosis eritémica
  para cada fototipo cutáneo, que se muestra en la tabla \ref{tabla:fototipo}.
 \vspace{-0.5cm}
     \begin{table}[H]
@@ -100,7 +100,7 @@ Para el cálculo de los tiempos de exposición solar se tomaron como referencia 
  10 estaciones del Sistema de Monitoreo Atmosférico (SIMAT) de la Ciudad de México. Se realizó un filtrado de estos datos para
  obtener unicamente los días de cielo despejado. A partir de los días seleccionados se creó una base de datos anual para determinar
   la irradiancia solar en tres condiciones de cielo, utilizando el factor C\textsubscript{f}: 1, 0.7, 0.5; para día despejado, medio nublado y nublado, respectivamente
-   (Figura \ref{fig:cloud})
+   (Figura \ref{fig:cloud}).
  \begin{figure}[H]
     \centering
     \includegraphics[scale=0.68]{images/nubes.png}
@@ -115,7 +115,7 @@ Para obtener la misma dosis a partir de la irradiancia solar se utilizó la sigu
 \end{equation*}
 donde $t_0$ y $t$ son la hora de inicio y hora de finalización para obtener la dosis UVA deseada, 
 por lo tanto, $t-t_0$ es el TES requerido para el tratamiento.\\ Para evitar quemadura solar o eritema se determina el TES máximo 
-empleando los MED reportados en la tabla \ref{tabla:fototipo} realizando la operación semejante a la dosis UVA incluyendo la ecuación del espectro de sensibilidad eritémica E\textsubscript{erit} de la piel humana
+empleando los MED reportados en la tabla \ref{tabla:fototipo} realizando la operación semejante a la dosis UVA incluyendo la ecuación del espectro de sensibilidad eritémica E\textsubscript{erit} de la piel humana.
 \begin{equation*}
     Dosis_{Erit}=\int\limits_{t_0}^{t} \int\limits_{280nm}^{400nm} \left( C_f E_{erit}E_{sol}\right)d\lambda dt = \int\limits_{t_0}^{t}C_f I_{erit}dt
 \end{equation*}
@@ -137,7 +137,7 @@ empleando los MED reportados en la tabla \ref{tabla:fototipo} realizando la oper
         \includegraphics[scale=0.38]{images/ery.png}
     \end{subfigure}
 \caption{(a) TES para obtener las dosis UVA necesarias en el tratamiento de Psoriasis y 
-(b) TES para evitar eritema en cada fototipo de piel según las condiciones de cielo despejado.}
+(b) TES para evitar eritema en cada fototipo de piel en condiciones de cielo despejado.}
 \end{figure}
 \begin{center}
 \begin{shaded}
