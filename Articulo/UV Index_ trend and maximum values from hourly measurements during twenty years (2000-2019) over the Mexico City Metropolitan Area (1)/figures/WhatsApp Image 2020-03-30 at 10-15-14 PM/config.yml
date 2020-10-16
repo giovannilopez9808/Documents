@@ -1,0 +1,20 @@
+---
+version: 2
+multicolumn: false
+web-width: 500px
+align: center
+float: h!
+grid:
+  rows: 1
+  columns: 1
+  grid_elements:
+  - path: figures/WhatsApp Image 2020-03-30 at 10-15-14 PM/WhatsApp Image 2020-03-30
+      at 10-15-14 PM.png
+    type: static
+    from:
+    - 1
+    - 1
+    to:
+    - 1
+    - 1
+    url: "/users/3629/articles/438014/master/file/figures/WhatsApp%20Image%202020-03-30%20at%2010-15-14%20PM/WhatsApp%20Image%202020-03-30%20at%2010-15-14%20PM.png"

@@ -1,0 +1,20 @@
+---
+version: 2
+multicolumn: false
+web-width: 500px
+align: center
+float: h!
+grid:
+  rows: 1
+  columns: 1
+  grid_elements:
+  - path: figures/SIMAT/SIMAT.xlsx
+    type: table
+    from:
+    - 1
+    - 1
+    to:
+    - 1
+    - 1
+    folder_url: "/users/3629/articles/438014/master/folder/figures/SIMAT"
+    url: "/users/3629/articles/438014/master/file/figures/SIMAT/SIMAT.xlsx"
