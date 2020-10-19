@@ -1,4 +1,5 @@
 \documentclass[10pt]{article}
+
 \usepackage{fullpage}
 \usepackage{setspace}
 \usepackage{parskip}
@@ -8,10 +9,11 @@
 \usepackage{breakcites}
 \usepackage{lineno}
 \usepackage{hyphenat}
-\usepackage{colortbl}
-\usepackage{tabulary}
-\usepackage{wrapfig}
-\usepackage{multirow}
+
+
+
+
+
 \PassOptionsToPackage{hyphens}{url}
 \usepackage[colorlinks = true,
             linkcolor = blue,
@@ -19,22 +21,38 @@
             citecolor = blue,
             anchorcolor = blue]{hyperref}
 \usepackage{etoolbox}
-\makeatletter
+% \makeatletter
+% \patchcmd\@combinedblfloats{\box\@outputbox}{\unvbox\@outputbox}{}{%
+%   \errmessage{\noexpand\@combinedblfloats could not be patched}%
+% }%
 \makeatother
+
+
 \usepackage{natbib}
+
+
+
+
 \renewenvironment{abstract}
   {{\bfseries\noindent{\abstractname}\par\nobreak}\footnotesize}
   {\bigskip}
+
 \titlespacing{\section}{0pt}{*3}{*1}
 \titlespacing{\subsection}{0pt}{*2}{*0.5}
 \titlespacing{\subsubsection}{0pt}{*1.5}{0pt}
+
+
 \usepackage{authblk}
+
+
 \usepackage{graphicx}
 \usepackage[space]{grffile}
 \usepackage{latexsym}
 \usepackage{textcomp}
 \usepackage{longtable}
 \usepackage{tabulary}
+\usepackage{colortbl}
+\usepackage{wrapfig}
 \usepackage{booktabs,array,multirow}
 \usepackage{amsfonts,amsmath,amssymb}
 \providecommand\citet{\cite}
@@ -43,11 +61,36 @@
 % You can conditionalize code for latexml or normal latex using this.
 \newif\iflatexml\latexmlfalse
 \providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}%
+
 \AtBeginDocument{\DeclareGraphicsExtensions{.pdf,.PDF,.eps,.EPS,.png,.PNG,.tif,.TIF,.jpg,.JPG,.jpeg,.JPEG}}
+
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman,greek,english]{babel}
+
+
+
 \usepackage{float}
+
+
+
+
+
+
+% Edit this header.tex file to include frontmatter definitions and global macros
+
+% Add here any LaTeX packages you would like to load in all document blocks
+% \usepackage{xspace}
+
+% Add here any LaTeX macros you would like to load in all document blocks
+% \def\example{This is an example macro.}
+
+% -----
+
 \iflatexml
+% Add here any LaTeXML-specific commands
+
+% -----
+
 \else
 % Add here any export style-specific LaTeX commands. These will only be loaded upon document export. 
 % \paperfield{Subject domain of my document}
@@ -55,17 +98,21 @@
 % \corraddress{Author One PhD, Department, Institution, City, State or Province, Postal Code, Country}
 % \fundinginfo{Funder One, Funder One Department, Grant/Award Number: 123456.}
 \fi
+
+
 \begin{document}
+
 \title{UV Index: trend and maximum values from hourly measurements during
 twenty years (2000-2019) over the Mexico City Metropolitan Area}
+
+
 \author[1]{Adriana Ipiña }%
 \author[2]{Gamaliel López-Padilla}%
 \author[1]{Rubén D Piacentini}%
 \author[3]{Sasha Madronich}
 \affil[1]{Instituto de Física Rosario (CONICET-UNR), Rosario, Argentina}%
 \affil[2]{Facultad de Ciencias Físico Matemáticas, Universidad Autónoma de Nuevo León, San Nicolás de los Garza, México}%
-\affil[3]{National Center for Atmospheric Research, Boulder, Colorado USA}%
-
+\affil[3]{National Center for Atmospheric Research, Boulder, Colorado USA}%ario }%
 
 
 \vspace{-1em}
@@ -114,7 +161,8 @@ groups with typical phototypes of the inhabitants of the Mexico City.%
 \sloppy
 
 
-
+\emph{Keywords: UV~Index, Solar UV radiation, Mexico City, Skin
+Phototypes,Standard Erythemal Dose.}
 
 \section*{Introduction}
 
@@ -262,6 +310,28 @@ and IV (59.2\%) in the country, we take into account these types as
 representative to calculate the maximum exposure times to avoid sunburn,
 of course with the understanding that paler colors require shorter times
 and darker ones need longer times to generate sunburn.\selectlanguage{english}
+
+
+Some reports have indicated that outdoor workers receive between 10\%
+and 80\% of ambient UV radiation \selectlanguage{ngerman}\hyperref[csl:50]{(Larkö and Diffey, 1983}; \hyperref[csl:51]{Makgabutlane et al., 2015}; \hyperref[csl:52]{Silva, 2016}; \hyperref[csl:53]{Moldovan et al., 2020)}. With over 21
+million persons living in the MCMA, exposure to solar UV radiation
+constitutes a major public health issue. In this intertropical zone,
+intense UV radiation is present in a wide daylight window almost all
+year, so that the UV Index is a useful and indispensable reference to
+prevent unwanted skin exposure. The assessments of the UV irradiance
+contribute to the knowledge of the regional climatology as well as the
+global monitoring of the atmosphere~\hyperref[csl:54]{(Madronich, 1993}; \hyperref[csl:55]{Fioletov et al., 2004}; \hyperref[csl:56]{Staiger and Koepke, 2005}; \hyperref[csl:57]{Luccini et al., 2006}; \hyperref[csl:28]{Herman, 2010}; \hyperref[csl:58]{Utrillas et al., 2018)}. Likewise, a lot
+of scientific publications around the world describe the importance of
+understanding the UV irradiance behavior along the time and its relation
+with the MED \hyperref[csl:59]{(Rivas et al., 2011}; \hyperref[csl:60]{Rivas et al., 2015}; \hyperref[csl:32]{Lehmann et al., 2019}; \hyperref[csl:61]{Parra et al., 2019}; \hyperref[csl:62]{Cadet et al., 2019)}. Despite of the relevance of UVI as a
+communication tool in relation to the public health, at present there
+are no studies focused on the maximum values attained and its behavior
+in Mexico City. The aim of this work is to analyze twenty years of UV
+Index measurements over MCMA to determine: trends, averages and maximum
+values as well as values filtered under cloudless sky. Finally, the
+SED/hr is calculated to quantify the solar exposure times to
+accumulate~the~(\(H_{er}\))~for 1 MED on skin phototype III and
+IV.
 \begin{table}[H]
   \centering \normalsize
     \begin{tabulary}{1.0\linewidth}{ccccccc}
@@ -282,30 +352,14 @@ population~\protect\hyperref[csl:49]{(ENADIS, 2017)} grouped by phototype.
 }}
 \end{table}
 
-Some reports have indicated that outdoor workers receive between 10\%
-and 80\% of ambient UV radiation \selectlanguage{ngerman}\hyperref[csl:50]{(Larkö and Diffey, 1983}; \hyperref[csl:51]{Makgabutlane et al., 2015}; \hyperref[csl:52]{Silva, 2016}; \hyperref[csl:53]{Moldovan et al., 2020)}. With over 21
-million persons living in the MCMA, exposure to solar UV radiation
-constitutes a major public health issue. In this intertropical zone,
-intense UV radiation is present in a wide daylight window almost all
-year, so that the UV Index is a useful and indispensable reference to
-prevent unwanted skin exposure. The assessments of the UV irradiance
-contribute to the knowledge of the regional climatology as well as the
-global monitoring of the atmosphere~\hyperref[csl:54]{(Madronich, 1993}; \hyperref[csl:55]{Fioletov et al., 2004}; \hyperref[csl:56]{Staiger and Koepke, 2005}; \hyperref[csl:57]{Luccini et al., 2006}; \hyperref[csl:28]{Herman, 2010}; \hyperref[csl:58]{Utrillas et al., 2018)}. Likewise, a lot
-of scientific publications around the world describe the importance of
-understanding the UV irradiance behavior along the time and its relation
-with the MED \hyperref[csl:59]{(Rivas et al., 2011}; \hyperref[csl:60]{Rivas et al., 2015}; \hyperref[csl:32]{Lehmann et al., 2019}; \hyperref[csl:61]{Parra et al., 2019}; \hyperref[csl:62]{Cadet et al., 2019)}. Despite of the relevance of UVI as a
-communication tool in relation to the public health, at present there
-are no studies focused on the maximum values attained and its behavior
-in Mexico City. The aim of this work is to analyze twenty years of UV
-Index measurements over MCMA to determine: averages and maximum values
-as well as values filtered under cloudless sky. Finally, the SED/hr is
-calculated to quantify the solar exposure times to
-accumulate~the~(\(H_{er}\))~for 1 MED on skin phototype III and
-IV.
 \section*{Measurement methodology}
+
 {\label{321063}}
+
 \subsection*{Ground-based~}
+
 {\label{339070}}
+
 United Mexican States is in the latitudinal fringe 14.53°N - 32.71°N of
 the Americas, where its capital (Mexico City) lies in a basin 70 km
 northwest from Popocatepetl volcano, one of three highest peaks of the
@@ -316,7 +370,7 @@ the Mexico City Metropolitan Area
 (Figure~{\ref{547698}}).~~\selectlanguage{english}
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=0.84\columnwidth]{figures/cdmx12mx(maps)4}
+\includegraphics[width=0.84\columnwidth]{figures/cdmx}
 \caption{{Maps from left to right: United Mexican States (red contour), Contour
 lines scale of Elevation over Mexican Valley (green area) and
 Distribution of the stations of the Atmospheric Monitoring System of
@@ -479,7 +533,7 @@ less than 1\%.\selectlanguage{english}
 \begin{center}
 \includegraphics[width=0.56\columnwidth]{figures/HistTotal}
 \caption{{Frequency distribution of maximum daily UV Index values in Mexico city
-during 2000 -2019.
+during 2000 -2019.~
 {\label{929259}}%
 }}
 \end{center}
@@ -503,13 +557,13 @@ afternoon. Further support for the role of pollution in suppressing the
 UVI comes from the observation made at Santa Fe (SFE) which in
 Fig.~{\ref{358425}} are seen to be systematically
 higher, e.g. by over 10\% in autumn afternoons, compared to the other
-stations. The SFE station is located at 3600 m asl, approximately 300 m
-higher than Mexico City, and so avoids a substantial fraction of the
-polluted MCMA boundary layer. It is expected to have higher values of
-the UVI, in agreement with the observations.\selectlanguage{english}
+stations. The SFE station is located at 2600 m asl, approximately 300 m
+higher than Mexico City downtown, and so avoids a substantial fraction
+of the polluted MCMA boundary layer. It is expected to have higher
+values of the UVI, in agreement with the observations.\selectlanguage{english}
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=0.98\columnwidth]{figures/days}
+\includegraphics[width=0.98\columnwidth]{figures/season}
 \caption{{UV Index measured over MCMA by SIMAT stations each minute along the day
 under cloudless conditions~for the seasons and dates (month/day/year):
 Spring (04/20/2018), Summer (06/04/2018),~ Autumn (11/13/2018) and
@@ -535,7 +589,7 @@ monthly mean of the UV Index were 10.6 (in May) and 6.5 (in November),
 respectively.\selectlanguage{english}
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=1.00\columnwidth]{figures/annualbox}
+\includegraphics[width=1.00\columnwidth]{figures/AnnualBox}
 \caption{{(a) Moving average function (gray curve) quarterly applied to monthly UV
 Index and SD (black dots and dash line) and its linear fit (red line).
 (b) Boxplot of monthly UV Index in the period 2000-2019: median (central
@@ -612,7 +666,7 @@ O$_3$ &-1.046 & 58.48 &-1.79\\
 AOD$_{340}$ &-0.01 &0.60 &-1.67\\
 \hline
 \end{tabular}
-\caption{{UV Index and criteria pollutants slope from linear fit, means 2000-2019 in units of $\mu g/m^3$(PM$_{10}$), ppm (CO), ppb (NO$_2$ and O$_3$) and dimensionless (UV Index and AOD340) annual percentage change (\%/year)}}
+\caption{{UV Index and criteria pollutants: slope from linear fit, average 2000-2019 in units of $\mu g/m^3$(PM$_{10}$), ppm (CO), ppb (NO$_2$ and O$_3$) and dimensionless (UV Index and AOD$_{340}$) and annual percentage change (\%/year)}}
 \end{table}
 
 A fundamental issue is to establish the clouds influence on the mean UV
@@ -706,12 +760,12 @@ days. As expected, the monthly averages UV Index under cloudless sky
 were higher than~\(\overline{UVI}_m\), probably due to the clouds absence.\selectlanguage{english}
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=0.98\columnwidth]{figures/season}
+\includegraphics[width=0.98\columnwidth]{figures/season_graphics}
 \caption{{Seasonal variability of the UV Index from ground measurement under
 cloudless sky in cold dry season (green), warm dry season (orange) and
 rainy season (blue) for: (a) Interpolation of the monthly mean UV Index
 (and respective SD in wide yellow bands) at solar noon in the period
-2016-2018 (black curve),~and cos(sza) at solar noon (red curve)~ and (b)
+2016-2018 (black curve),~and cos(sza) at solar noon (red curve)~and (b)
 Daily averages of the SED/hr~along the hours of the day, for each
 season.~
 {\label{590688}}%
@@ -730,7 +784,7 @@ Figure~{\ref{590688}}a, the interpolation of the UV
 Index (and corresponding SED/hr) at solar noon under clear sky, revels
 that these levels match better with the~\(UVI_{\max}\) values
 measured over the network (see Figure~{\ref{931769}})
-and the highest UV Index value of 12.6 (11.3 SED/hr) on June.
+and the highest UV Index value of 12.6 (11.3 SED/hr) in June.
 Additionally, the SED/hr under all clear sky days were averaged for the
 three seasons: cold dry, warm dry and rainy, as is shown in
 Figure~{\ref{590688}}b. The warm dry and rainy seasons
@@ -744,7 +798,7 @@ measurements and derived data from model~\hyperref[csl:14]{(Castro et al., 2001}
 to confirm this hypothesis.~ However, the main reason for the seasonal
 variation of the cloud-free UVI is not due to aerosols, but rather
 simply to the annual cycle of the solar zenith angle, the cosine of
-which is also plotted in Fig. {\ref{590688}}a and is
+which is also plotted in Fig.~{\ref{590688}}a and is
 seen to correlate well with the UVI. ~
 
 As was mentioned in the Introduction, the phototypes III and IV are the
@@ -759,7 +813,7 @@ exposure time to accumulate the~corresponding~\(H_{er}\)~for
 each phototype.\selectlanguage{english}
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=0.70\columnwidth]{figures/FillDosis}
+\includegraphics[width=0.70\columnwidth]{figures/FillDosis2}
 \caption{{Solar Exposure Time along of the hours of the day for typical skin type
 of the Mexican population to accumulate~\(H_{er}\): 3.0 SED for
 phototype III (red curves) and and 4.5 SED for phototype IV (yellow
@@ -790,10 +844,10 @@ asl) the ultraviolet irradiance is lower than in Colima (485 m asl), a
 relatively pollution-free city and placed at~about the same
 latitude~\hyperref[csl:19]{(Galindo et al., 1995)}. The~\(\overline{UVI}_m\)~at solar noon
 reaches up to 10.6 obtained under all sky conditions (see
-Figure~{\ref{443547}}). In contrast, the
-highest~~\(UVI_{\max}\)~value from satellite data
-(Figure~{\ref{674611}}) and the ground-based value were
-14.9 (in Figure~{\ref{931769}}), both in \emph{Extreme}
+Figure~{\ref{443547}}). In contrast, UV Index from
+satellite data (Figure~{\ref{674611}}) and the
+highest~\(UVI_{\max}\) ground-based values were 14.9 (in
+Figure~{\ref{931769}}), both in \emph{Extreme}
 qualification range of WHO~\hyperref[csl:24]{(WHO, 2002)}. The high aerosols
 concentration and smog photochemistry products may affect the solar
 radiation reaching the surface~\hyperref[csl:14]{(Castro et al., 2001}; \hyperref[csl:13]{Palancar et al., 2013)}. Also the existence of
@@ -837,10 +891,10 @@ are exempt to develop skin-cancer~\hyperref[csl:40]{(Castanedo-Cazares et al., 2
 timely diagnosis continue to be the main strategy to reduce the
 incidence and impact of skin cancer~\hyperref[csl:71]{(Pinedo et al., 2009}; \hyperref[csl:72]{Alfaro-Sánchez et al., 2016)}. This study
 highlights the importance of knowing the UV Index levels and the maximum
-exposure times to avoid damage. The government advice may be accompanied
-by recommendations associated with typical customs of the country, such
-as the use of hats and long-sleeved shirts when they work or perform
-recreational activities in outdoors conditions.~
+exposure times to avoid damage. The prevention campaigns may be
+accompanied by recommendations associated with typical customs of the
+country, such as the use of hats and long-sleeved shirts when they work
+or perform recreational activities in outdoors conditions.~
 
 \section*{Acknowledgements}
 
