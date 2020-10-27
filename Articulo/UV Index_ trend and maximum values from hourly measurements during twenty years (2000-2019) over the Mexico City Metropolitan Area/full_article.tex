@@ -1,5 +1,4 @@
 \documentclass[10pt]{article}
-
 \usepackage{fullpage}
 \usepackage{setspace}
 \usepackage{parskip}
@@ -61,14 +60,9 @@
 % You can conditionalize code for latexml or normal latex using this.
 \newif\iflatexml\latexmlfalse
 \providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}%
-
 \AtBeginDocument{\DeclareGraphicsExtensions{.pdf,.PDF,.eps,.EPS,.png,.PNG,.tif,.TIF,.jpg,.JPG,.jpeg,.JPEG}}
-
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman,greek,english]{babel}
-
-
-
 \usepackage{float}
 
 
@@ -337,9 +331,10 @@ values as well as values filtered under cloudless sky. Finally, the
 SED/hr is calculated to quantify the solar exposure times to
 accumulate~the~(\(H_{er}\))~for 1 MED on skin phototype III and
 IV.
+\selectlanguage{english}
 \begin{table}[H]
-  \centering \normalsize
-    \begin{tabulary}{1.0\linewidth}{ccccccc}
+  \centering
+    \begin{tabular}{ccccccc}
          \multirow{2}{*}{Phototype}& \multirow{2}{*}{H\textsubscript{er} (SED)} & \multicolumn{4}{c}{Skin} & skin color of the\\
          & & \multicolumn{4}{c}{color} & Mexican population (\%) \\  \hline
         I 	&2.0	&\cellcolor[RGB]{251, 244, 227}\hspace*{0.05cm} 	&\cellcolor[RGB]{245, 240, 218}\hspace*{0.05cm}  &\cellcolor[RGB]{247, 238, 217}\hspace*{0.05cm} 	&\cellcolor[RGB]{248, 234, 209} \hspace*{0.05cm} &0.8	\\ \hline
@@ -348,13 +343,12 @@ IV.
         IV 	&4.5	&\cellcolor[RGB]{219, 191, 129}	&\cellcolor[RGB]{208, 171, 107} &\cellcolor[RGB]{193, 150, 90}	&\cellcolor[RGB]{182, 135, 75}&59.2	\\ \hline
         V	&6.0	&\cellcolor[RGB]{172, 121, 68}	&\cellcolor[RGB]{135, 92, 50}  &\cellcolor[RGB]{113, 70, 38}	&\cellcolor[RGB]{77, 48, 28}&8.9	\\ \hline
         VI 	&10.0 	&\cellcolor[RGB]{68, 37, 20}	&\cellcolor[RGB]{43, 25, 8}  &\cellcolor[RGB]{32, 12, 7}	&\cellcolor[RGB]{10, 2, 5}	&2.5	\\ \hline
-    \end{tabulary}
-\caption{{Skin phototypes with their respectives minimal erythemal doses in terms
+    \end{tabular}
+\caption{Skin phototypes with their respectives minimal erythemal doses in terms
 of SED~\protect\hyperref[csl:30]{(Fitzpatrick, 1988)} and adaptation from ENADIS study for the skin
 colors and their percentages (\%) of presence in the Mexican
-population~\protect\hyperref[csl:49]{(ENADIS, 2017)} grouped by phototype.
-{\label{290967}}%
-}}
+population~\protect\hyperref[csl:49]{(ENADIS, 2017)} grouped by phototype.\label{290967}
+}
 \end{table}
 
 \section*{Measurement methodology}
@@ -375,7 +369,7 @@ the Mexico City Metropolitan Area
 (Figure~{\ref{547698}}).~~\selectlanguage{english}
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=0.84\columnwidth]{figures/cdmx}
+\includegraphics[width=0.84\columnwidth]{cdmx}
 \caption{{Maps from left to right: United Mexican States (red contour), Contour
 lines scale of Elevation over Mexican Valley (green area) and
 Distribution of the stations of the Atmospheric Monitoring System of
@@ -536,7 +530,7 @@ highest UV Index values were in the 13-14 range, with a frequency of
 less than 1\%.\selectlanguage{english}
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=0.56\columnwidth]{figures/HistTotal}
+\includegraphics[width=0.56\columnwidth]{HistTotal}
 \caption{{Frequency distribution of maximum daily UV Index values in Mexico city
 during 2000 -2019.~
 {\label{929259}}%
@@ -568,7 +562,7 @@ of the polluted MCMA boundary layer. It is expected to have higher
 values of the UVI, in agreement with the observations.\selectlanguage{english}
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=0.98\columnwidth]{figures/season}
+\includegraphics[width=0.98\columnwidth]{season}
 \caption{{UV Index measured over MCMA by SIMAT stations each minute along the day
 under cloudless conditions~for the seasons and dates (month/day/year):
 Spring (04/20/2018), Summer (06/04/2018),~ Autumn (11/13/2018) and
@@ -594,7 +588,7 @@ monthly mean of the UV Index were 10.6 (in May) and 6.5 (in November),
 respectively.\selectlanguage{english}
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=1.00\columnwidth]{figures/AnnualBox}
+\includegraphics[width=1.00\columnwidth]{AnnualBox}
 \caption{{(a) Moving average function (gray curve) quarterly applied to monthly UV
 Index and SD (black dots and dash line) and its linear fit (red line).
 (b) Boxplot of monthly UV Index in the period 2000-2019: median (central
@@ -638,7 +632,7 @@ the values corresponding to PM\textsubscript{10}, CO,
 NO\textsubscript{2}, O\textsubscript{3} and AOD\textsubscript{340}.~\selectlanguage{english}
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=0.56\columnwidth]{figures/contCDMX}
+\includegraphics[width=0.56\columnwidth]{contCDMX}
 \caption{{Air quality trends for the period 2000-2019 in Mexico City Metropolitan
 Area from annual averages obtained between 11h to 14h CST every
 day:~PM\textsubscript{10~}(brown curve),~ CO (purple curve),
@@ -695,7 +689,7 @@ Conversely, higher ozone levels were registered from April to
 September.~\selectlanguage{english}
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=1.00\columnwidth]{figures/OzonoCloudDaily}
+\includegraphics[width=1.00\columnwidth]{OzonoCloudDaily}
 \caption{{Satellite data over Mexico City: (a) Cloud Factor OMI-Aura/NIVR-FMI-NASA
 between 2004-2019 and (b) Total Ozone Column from TOMS-EP/NASA and
 OMI-Aura/NIVR-FMI-NASA in the periods 2000-2003 and 2004-2019,
@@ -718,7 +712,7 @@ corresponding to the \emph{Extreme} qualification for the UV index given
 by WHO, are commons from April to September.\selectlanguage{english}
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=0.70\columnwidth]{figures/UVI-OMI}
+\includegraphics[width=0.70\columnwidth]{UVI-OMI}
 \caption{{UV Index recorded by~OMI-Aura/NIVR-FMI-NASA, from 2005 to 2019.
 {\label{674611}}%
 }}
@@ -741,7 +735,7 @@ maximum near noon. The highest~\(UVI_{\max}\) recorded in the period
 from satellite observations.\selectlanguage{english}
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=0.98\columnwidth]{figures/MaxUVindex}
+\includegraphics[width=0.98\columnwidth]{MaxUVindex}
 \caption{{The highest UV Index values recorded during 2000-2019, for each day of
 the year and each hour of the day. Selected from SIMAT observations in
 Mexico City.~
@@ -765,7 +759,7 @@ days. As expected, the monthly averages UV Index under cloudless sky
 were higher than~\(\overline{UVI}_m\), probably due to the clouds absence.\selectlanguage{english}
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=0.98\columnwidth]{figures/season_graphics}
+\includegraphics[width=0.98\columnwidth]{season_graphics}
 \caption{{Seasonal variability of the UV Index from ground measurement under
 cloudless sky in cold dry season (green), warm dry season (orange) and
 rainy season (blue) for: (a) Interpolation of the monthly mean UV Index
@@ -821,7 +815,7 @@ exposure time to accumulate the~corresponding~\(H_{er}\)~for
 each phototype.\selectlanguage{english}
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=0.70\columnwidth]{figures/FillDosis2}
+\includegraphics[width=0.70\columnwidth]{FillDosis2}
 \caption{{Solar Exposure Time along of the hours of the day for typical skin type
 of the Mexican population to accumulate~\(H_{er}\): 3.0 SED for
 phototype III (red curves) and and 4.5 SED for phototype IV (yellow
