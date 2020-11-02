@@ -1,5 +1,4 @@
 \documentclass[10pt]{article}
-
 \usepackage{fullpage}
 \usepackage{setspace}
 \usepackage{parskip}
@@ -61,14 +60,9 @@
 % You can conditionalize code for latexml or normal latex using this.
 \newif\iflatexml\latexmlfalse
 \providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}%
-
 \AtBeginDocument{\DeclareGraphicsExtensions{.pdf,.PDF,.eps,.EPS,.png,.PNG,.tif,.TIF,.jpg,.JPG,.jpeg,.JPEG}}
-
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman,greek,english]{babel}
-
-
-
 \usepackage{float}
 
 
@@ -318,9 +312,10 @@ values as well as values filtered under cloudless sky. Finally, the
 SED/hr is calculated to quantify the solar exposure times to
 accumulate~the~(\(H_{er}\))~for 1 MED on skin phototype III and
 IV.
+\selectlanguage{english}
 \begin{table}[H]
-  \centering \normalsize
-    \begin{tabulary}{1.0\linewidth}{ccccccc}
+  \centering
+    \begin{tabular}{ccccccc}
          \multirow{2}{*}{Phototype}& \multirow{2}{*}{H\textsubscript{er} (SED)} & \multicolumn{4}{c}{Skin} & skin color of the\\
          & & \multicolumn{4}{c}{color} & Mexican population (\%) \\  \hline
         I 	&2.0	&\cellcolor[RGB]{251, 244, 227}\hspace*{0.05cm} 	&\cellcolor[RGB]{245, 240, 218}\hspace*{0.05cm}  &\cellcolor[RGB]{247, 238, 217}\hspace*{0.05cm} 	&\cellcolor[RGB]{248, 234, 209} \hspace*{0.05cm} &0.8	\\ \hline
@@ -329,13 +324,12 @@ IV.
         IV 	&4.5	&\cellcolor[RGB]{219, 191, 129}	&\cellcolor[RGB]{208, 171, 107} &\cellcolor[RGB]{193, 150, 90}	&\cellcolor[RGB]{182, 135, 75}&59.2	\\ \hline
         V	&6.0	&\cellcolor[RGB]{172, 121, 68}	&\cellcolor[RGB]{135, 92, 50}  &\cellcolor[RGB]{113, 70, 38}	&\cellcolor[RGB]{77, 48, 28}&8.9	\\ \hline
         VI 	&10.0 	&\cellcolor[RGB]{68, 37, 20}	&\cellcolor[RGB]{43, 25, 8}  &\cellcolor[RGB]{32, 12, 7}	&\cellcolor[RGB]{10, 2, 5}	&2.5	\\ \hline
-    \end{tabulary}
-\caption{{Skin phototypes with their respectives minimal erythemal doses in terms
+    \end{tabular}
+\caption{Skin phototypes with their respectives minimal erythemal doses in terms
 of SED~\protect\hyperref[csl:30]{(Fitzpatrick, 1988)} and adaptation from ENADIS study for the skin
 colors and their percentages (\%) of presence in the Mexican
-population~\protect\hyperref[csl:49]{(ENADIS, 2017)} grouped by phototype.
-{\label{290967}}%
-}}
+population~\protect\hyperref[csl:49]{(ENADIS, 2017)} grouped by phototype.\label{290967}
+}
 \end{table}
 
 \section*{Measurement methodology}
