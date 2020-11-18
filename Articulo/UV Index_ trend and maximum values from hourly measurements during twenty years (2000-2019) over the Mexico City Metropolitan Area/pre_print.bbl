@@ -498,44 +498,6 @@ Cuevas, A\BPBI G.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-de Vries%
-, Sierra%
-, Pi{\~{n}}eros%
-, Loria%
-\BCBL {}\ \BBA {} Forman%
-}{%
-de Vries%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2016}}%
-}]{%
-de_Vries_2016}
-\APACinsertmetastar {%
-de_Vries_2016}%
-\begin{APACrefauthors}%
-de Vries, E.%
-, Sierra, M.%
-, Pi{\~{n}}eros, M.%
-, Loria, D.%
-\BCBL {}\ \BBA {} Forman, D.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2016}{sep}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{The burden of cutaneous melanoma and status of
-  preventive measures in Central and South America}} {{The burden of cutaneous
-  melanoma and status of preventive measures in Central and South
-  America}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Cancer Epidemiology}{44}{}{S100--S109}.
-\newblock
-\begin{APACrefURL} \url{https://doi.org/10.1016%2Fj.canep.2016.02.005}
-  \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.1016/j.canep.2016.02.005} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Dickerson%
 }{%
 Dickerson%
@@ -591,6 +553,41 @@ Doran, J\BPBI C.%
   Area}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Bull. Amer. Meteor. Soc.}{79}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+D{\textquotesingle}Orazio%
+, Jarrett%
+, Amaro-Ortiz%
+\BCBL {}\ \BBA {} Scott%
+}{%
+D{\textquotesingle}Orazio%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2013}}%
+}]{%
+D_Orazio_2013}
+\APACinsertmetastar {%
+D_Orazio_2013}%
+\begin{APACrefauthors}%
+D{\textquotesingle}Orazio, J.%
+, Jarrett, S.%
+, Amaro-Ortiz, A.%
+\BCBL {}\ \BBA {} Scott, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{jun}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{{UV} Radiation and the Skin}} {{{UV} Radiation and the
+  Skin}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{International Journal of Molecular
+  Sciences}{14}{6}{12222--12248}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.3390%2Fijms140612222}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.3390/ijms140612222} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -823,6 +820,35 @@ Goering, C\BPBI D.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1029/2004jd005330} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Heckman%
+, Liang%
+\BCBL {}\ \BBA {} Riley%
+}{%
+Heckman%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2019}}%
+}]{%
+Heckman2019}
+\APACinsertmetastar {%
+Heckman2019}%
+\begin{APACrefauthors}%
+Heckman, C.%
+, Liang, K.%
+\BCBL {}\ \BBA {} Riley, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{Jun}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Awareness, understanding, use, and impact of the UV
+  index: A systematic review of over two decades of international research.}}
+  {{Awareness, understanding, use, and impact of the UV index: A systematic
+  review of over two decades of international research.}}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Prev Med}{123}{}{71-83}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1468,6 +1494,43 @@ Palancar, G\BPBI G.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Panicker%
+, Pandithurai%
+, Beig%
+, Kim%
+\BCBL {}\ \BBA {} Lee%
+}{%
+Panicker%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+Panicker_2014}
+\APACinsertmetastar {%
+Panicker_2014}%
+\begin{APACrefauthors}%
+Panicker, A\BPBI S.%
+, Pandithurai, G.%
+, Beig, G.%
+, Kim, D.%
+\BCBL {}\ \BBA {} Lee, D\BHBI I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Aerosol Modulation of Ultraviolet Radiation Dose over
+  Four Metro Cities in India}} {{Aerosol Modulation of Ultraviolet Radiation
+  Dose over Four Metro Cities in India}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Advances in Meteorology}{2014}{}{1--5}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1155%2F2014%2F202868}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1155/2014/202868} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Parra%
 , Cadena%
 \BCBL {}\ \BBA {} Flores%
@@ -1500,6 +1563,44 @@ Parra, R.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.3390/atmos10120787} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Peng%
+, Du%
+, Wang%
+, Lin%
+\BCBL {}\ \BBA {} Hu%
+}{%
+Peng%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+Peng_2014}
+\APACinsertmetastar {%
+Peng_2014}%
+\begin{APACrefauthors}%
+Peng, S.%
+, Du, Q.%
+, Wang, L.%
+, Lin, A.%
+\BCBL {}\ \BBA {} Hu, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{jul}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Long-term variations of ultraviolet radiation in
+  Tibetan Plateau from observation and estimation}} {{Long-term variations of
+  ultraviolet radiation in Tibetan Plateau from observation and
+  estimation}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{International Journal of
+  Climatology}{35}{7}{1245--1253}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1002%2Fjoc.4051} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1002/joc.4051} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1596,6 +1697,40 @@ Qui{\~{n}}ones, A.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1016/j.egypro.2014.10.110} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Raptis%
+\ \protect \BOthers {.}}{%
+Raptis%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+Raptis_2020}
+\APACinsertmetastar {%
+Raptis_2020}%
+\begin{APACrefauthors}%
+Raptis, I\BHBI P.%
+, Kazadzis, S.%
+, Amiridis, V.%
+, Gkikas, A.%
+, Gerasopoulos, E.%
+\BCBL {}\ \BBA {} Mihalopoulos, N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{jan}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A Decade of Aerosol Optical Properties Measurements
+  over Athens Greece}} {{A Decade of Aerosol Optical Properties Measurements
+  over Athens Greece}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Atmosphere}{11}{2}{154}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.3390%2Fatmos11020154}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.3390/atmos11020154} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -2206,6 +2341,41 @@ Utrillas, M\BPBI P.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1016/j.energy.2018.08.021} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Wang%
+, Gong%
+, Feng%
+\BCBL {}\ \BBA {} Hu%
+}{%
+Wang%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+Wang_2014}
+\APACinsertmetastar {%
+Wang_2014}%
+\begin{APACrefauthors}%
+Wang, L.%
+, Gong, W.%
+, Feng, L.%
+\BCBL {}\ \BBA {} Hu, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{jul}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{{UV} variability in an arid region of Northwest China
+  from measurements and reconstructions}} {{{UV} variability in an arid region
+  of Northwest China from measurements and reconstructions}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{International Journal of
+  Climatology}{35}{8}{1938--1947}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1002%2Fjoc.4099} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1002/joc.4099} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

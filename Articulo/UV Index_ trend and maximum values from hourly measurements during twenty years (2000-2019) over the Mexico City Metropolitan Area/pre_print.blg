@@ -17,45 +17,45 @@ Database file #1: bibliography/converted_to_latex.bib
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
 Warning--No institution in 2002
 Warning--No address in 2002
-You've used 74 entries,
+You've used 79 entries,
             6951 wiz_defined-function locations,
-            1867 strings with 31183 characters,
-and the built_in function-call counts, 171653 in all, are:
-= -- 20221
-> -- 1543
-< -- 9074
-+ -- 9840
-- -- 160
-* -- 11923
-:= -- 32408
-add.period$ -- 294
-call.type$ -- 74
-change.case$ -- 1351
+            1904 strings with 32363 characters,
+and the built_in function-call counts, 183298 in all, are:
+= -- 21550
+> -- 1662
+< -- 9697
++ -- 10486
+- -- 170
+* -- 12762
+:= -- 34615
+add.period$ -- 314
+call.type$ -- 79
+change.case$ -- 1444
 chr.to.int$ -- 0
-cite$ -- 150
-duplicate$ -- 5180
-empty$ -- 6358
-format.name$ -- 2877
-if$ -- 30951
+cite$ -- 160
+duplicate$ -- 5534
+empty$ -- 6798
+format.name$ -- 3095
+if$ -- 33034
 int.to.chr$ -- 0
-int.to.str$ -- 222
+int.to.str$ -- 237
 missing$ -- 0
-newline$ -- 2176
-num.names$ -- 592
-pop$ -- 2294
+newline$ -- 2331
+num.names$ -- 632
+pop$ -- 2434
 preamble$ -- 1
-purify$ -- 388
+purify$ -- 416
 quote$ -- 0
-skip$ -- 10042
+skip$ -- 10715
 stack$ -- 0
-substring$ -- 10554
-swap$ -- 2829
-text.length$ -- 253
+substring$ -- 11235
+swap$ -- 3038
+text.length$ -- 271
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 6048
+type$ -- 6448
 warning$ -- 2
-while$ -- 1042
+while$ -- 1123
 width$ -- 0
-write$ -- 2805
+write$ -- 3014
 (There were 2 warnings)
