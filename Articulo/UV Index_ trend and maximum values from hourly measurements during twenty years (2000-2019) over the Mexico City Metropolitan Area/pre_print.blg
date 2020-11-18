@@ -19,36 +19,36 @@ Warning--No institution in 2002
 Warning--No address in 2002
 You've used 79 entries,
             6951 wiz_defined-function locations,
-            1904 strings with 32363 characters,
-and the built_in function-call counts, 183298 in all, are:
-= -- 21550
+            1904 strings with 32358 characters,
+and the built_in function-call counts, 183241 in all, are:
+= -- 21539
 > -- 1662
-< -- 9697
-+ -- 10486
+< -- 9695
++ -- 10478
 - -- 170
-* -- 12762
-:= -- 34615
+* -- 12760
+:= -- 34608
 add.period$ -- 314
 call.type$ -- 79
 change.case$ -- 1444
 chr.to.int$ -- 0
 cite$ -- 160
-duplicate$ -- 5534
+duplicate$ -- 5531
 empty$ -- 6798
 format.name$ -- 3095
-if$ -- 33034
+if$ -- 33023
 int.to.chr$ -- 0
 int.to.str$ -- 237
 missing$ -- 0
 newline$ -- 2331
 num.names$ -- 632
-pop$ -- 2434
+pop$ -- 2433
 preamble$ -- 1
 purify$ -- 416
 quote$ -- 0
-skip$ -- 10715
+skip$ -- 10713
 stack$ -- 0
-substring$ -- 11235
+substring$ -- 11225
 swap$ -- 3038
 text.length$ -- 271
 text.prefix$ -- 0
